@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Aug  7 20:27:22 2026
+# Process ID: 19736
+# Current directory: D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.runs/synth_1
+# Command line: vivado.exe -log stopwatch_watch.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source stopwatch_watch.tcl
+# Log file: D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.runs/synth_1/stopwatch_watch.vds
+# Journal file: D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source stopwatch_watch.tcl -notrace

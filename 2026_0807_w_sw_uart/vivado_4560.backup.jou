@@ -1,0 +1,57 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Aug  3 14:05:18 2026
+# Process ID: 4560
+# Current directory: D:/work/26_AI_VerilogHDL_SV/2026_0802_gk_ds
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17820 D:\work\26_AI_VerilogHDL_SV\2026_0802_gk_ds\2026_0728_stopwatch.xpr
+# Log file: D:/work/26_AI_VerilogHDL_SV/2026_0802_gk_ds/vivado.log
+# Journal file: D:/work/26_AI_VerilogHDL_SV/2026_0802_gk_ds\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/work/26_AI_VerilogHDL_SV/2026_0802_gk_ds/2026_0728_stopwatch.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source sw_w.tcl
+run all
+relaunch_sim
+close_sim
+launch_simulation
+source sw_w.tcl
+run all
+run all
+relaunch_sim
+run all
+run all
+relaunch_sim
+run all
+run all
+relaunch_sim
+run all
+run all
+relaunch_sim
+run all
+run all
+relaunch_sim
+relaunch_sim
+run all
+run all
+relaunch_sim
+run all
+run all
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+run all
+relaunch_sim
+run all
+run all
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+refresh_design
+refresh_design
+close_sim

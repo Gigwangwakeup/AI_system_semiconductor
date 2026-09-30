@@ -1,0 +1,11 @@
+===================================
+Configuration Memory information
+===================================
+File Format        MCS
+Interface          SPIX4
+Size               4M
+Start Address      0x00000000
+End Address        0x003FFFFF
+
+Addr1         Addr2         Date                    File(s)
+0x00000000    0x0004ECB7    Aug  2 12:31:10 2026    D:/work/26_AI_VerilogHDL_SV/2026_0802_gk_ds/2026_0728_stopwatch.runs/impl_1/stopwatch_watch.bit

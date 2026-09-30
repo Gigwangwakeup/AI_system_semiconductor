@@ -1,0 +1,37 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Aug  2 21:48:19 2026
+# Process ID: 600
+# Current directory: D:/work/26_AI_VerilogHDL_SV/2026_0802_gk_ds
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2840 D:\work\26_AI_VerilogHDL_SV\2026_0802_gk_ds\2026_0728_stopwatch.xpr
+# Log file: D:/work/26_AI_VerilogHDL_SV/2026_0802_gk_ds/vivado.log
+# Journal file: D:/work/26_AI_VerilogHDL_SV/2026_0802_gk_ds\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/work/26_AI_VerilogHDL_SV/2026_0802_gk_ds/2026_0728_stopwatch.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {D:/work/26_AI_VerilogHDL_SV/2026_0802_gk_ds/2026_0728_stopwatch.runs/impl_1/stopwatch_watch.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+create_hw_cfgmem -hw_device [get_hw_devices xc7a35t_0] -mem_dev [lindex [get_cfgmem_parts {mx25l3233f-spi-x1_x2_x4}] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/work/26_AI_VerilogHDL_SV/2026_0802_gk_ds/2026_0728_stopwatch.runs/impl_1/stopwatch_watch.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/work/26_AI_VerilogHDL_SV/2026_0802_gk_ds/2026_0728_stopwatch.runs/impl_1/stopwatch_watch.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]

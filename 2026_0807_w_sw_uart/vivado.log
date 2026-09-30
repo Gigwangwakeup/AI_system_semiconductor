@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Aug 10 09:03:08 2026
+# Process ID: 1228
+# Current directory: D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17620 D:\work\26_AI_VerilogHDL_SV\2026_0807_w_sw_uart\2026_0728_stopwatch.xpr
+# Log file: D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/vivado.log
+# Journal file: D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.xpr
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 1085.730 ; gain = 0.000
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sim_1/new/tb_uart_ascii.v w ]
+add_files -fileset sim_1 D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sim_1/new/tb_uart_ascii.v
+update_compile_order -fileset sim_1
+set_property top tb_uart_ascii [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Aug 10 10:23:20 2026...

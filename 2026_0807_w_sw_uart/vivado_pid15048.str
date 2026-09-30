@@ -1,0 +1,1056 @@
+/*
+
+Xilinx Vivado v2020.2 (64-bit) [Major: 2020, Minor: 2]
+SW Build: 3064766 on Wed Nov 18 09:12:45 MST 2020
+IP Build: 3064653 on Wed Nov 18 14:17:31 MST 2020
+
+Process ID (PID): 15048
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Fri Aug 07 16:14:13 KST 2026
+Time zone: 	Korean Standard Time (Asia/Seoul)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 16
+
+Screen size: 2560x1440
+Screen resolution (DPI): 100
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+
+Java version: 	11.0.2 64-bit
+Java home: 	C:/Xilinx/Vivado/2020.2/tps/win64/jre11.0.2
+Java executable location: 	C:/Xilinx/Vivado/2020.2/tps/win64/jre11.0.2/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	kccistc
+User home directory: C:/Users/kccistc
+User working directory: D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart
+User country: 	KR
+User language: 	ko
+User locale: 	ko_KR
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2020.2
+RDI_DATADIR: C:/Xilinx/Vivado/2020.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2020.2/bin
+
+Vivado preferences file location: C:/Users/kccistc/AppData/Roaming/Xilinx/Vivado/2020.2/vivado.xml
+Vivado preferences directory: C:/Users/kccistc/AppData/Roaming/Xilinx/Vivado/2020.2/
+Vivado layouts directory: C:/Users/kccistc/AppData/Roaming/Xilinx/Vivado/2020.2/data/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2020.2/lib/classes/planAhead.jar
+Vivado log file location: 	D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/vivado.log
+Vivado journal file location: 	D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/vivado.jou
+Engine tmp dir: 	D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/.Xil/Vivado-15048-DESKTOP-7CFQ9ND
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_HLS: C:/Xilinx/Vitis_HLS/2020.2
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2020.2
+XILINX_SDK: C:/Xilinx/Vitis/2020.2
+XILINX_VITIS: C:/Xilinx/Vitis/2020.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2020.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2020.2
+
+
+GUI allocated memory:	138 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,117 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bz (cr):  Open Project : addNotify
+// Opening Vivado Project: D:\work\26_AI_VerilogHDL_SV\2026_0807_w_sw_uart\2026_0728_stopwatch.xpr. Version: Vivado v2020.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 112 MB (+114487kb) [00:00:10]
+// [Engine Memory]: 1,117 MB (+1019464kb) [00:00:10]
+// [GUI Memory]: 120 MB (+3018kb) [00:00:11]
+// WARNING: HEventQueue.dispatchEvent() is taking  2068 ms.
+// Tcl Message: open_project D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'D:/work/26_AI_VerilogHDL_SV/2026_0802_gk_ds' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,117 MB. GUI used memory: 78 MB. Current time: 8/7/26, 4:14:14 PM KST
+// Project name: 2026_0728_stopwatch; location: D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart; part: xc7a35tcpg236-1
+dismissDialog("Open Project"); // bz
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// [GUI Memory]: 127 MB (+1206kb) [00:00:14]
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 24 seconds
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // E
+// [GUI Memory]: 139 MB (+5394kb) [00:00:37]
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cr): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a
+// Elapsed time: 24 seconds
+String[] filenames31467 = {"D:/work/26_AI_VerilogHDL_SV/2026_0805_uart/2026_0805_uart.srcs/sources_1/new/uart.v", "D:/work/26_AI_VerilogHDL_SV/2026_0805_uart/2026_0805_uart.srcs/sources_1/new/uart_loop_back.v"};
+setFileChooser(filenames31467);
+selectButton("FINISH", "Finish"); // JButton
+// 'g' command handler elapsed time: 32 seconds
+// [GUI Memory]: 149 MB (+3091kb) [00:01:10]
+dismissDialog("Add Sources"); // c
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: import_files -norecurse {D:/work/26_AI_VerilogHDL_SV/2026_0805_uart/2026_0805_uart.srcs/sources_1/new/uart_loop_back.v D:/work/26_AI_VerilogHDL_SV/2026_0805_uart/2026_0805_uart.srcs/sources_1/new/uart.v} 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, btn_debounce (uart.v)]", 4, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 5, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, btn_debounce (uart.v)]", 4, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart_controller (uart.v)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart_controller (uart.v)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart_controller (uart.v)]", 2, true, false, false, false, false, true); // D - Double Click - Node
+// Launch External Editor: '"C:/Users/kccistc/AppData/Local/Programs/Microsoft VS Code/Code.exe" -g "D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/new/uart.v":23'
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart_controller (uart.v)]", 2); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart_loop_back (uart_loop_back.v)]", 3, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart_loop_back (uart_loop_back.v)]", 3, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 5, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 5, true, false, false, false, false, true); // D - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Basys-3-Master.xdc]", 7, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Basys-3-Master.xdc]", 7, false, false, false, false, false, true); // D - Double Click
+// Launch External Editor: '"C:/Users/kccistc/AppData/Local/Programs/Microsoft VS Code/Code.exe" -g "D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/constrs_1/imports/26_AI_VerilogHDL_SV/Basys-3-Master.xdc":0'
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 35 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_watch (watch_wrapper.v)]", 1, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_watch (watch_wrapper.v)]", 1, true, false, false, false, false, true); // D - Double Click - Node
+// Launch External Editor: '"C:/Users/kccistc/AppData/Local/Programs/Microsoft VS Code/Code.exe" -g "D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/new/watch_wrapper.v":23'
+// HMemoryUtils.trashcanNow. Engine heap size: 1,117 MB. GUI used memory: 85 MB. Current time: 8/7/26, 4:44:16 PM KST
+// Elapsed time: 2921 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_watch (watch_wrapper.v), u_watch_wrapper : gk_watch_wrapper (top.v)]", 3, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_watch (watch_wrapper.v), u_watch_wrapper : gk_watch_wrapper (top.v)]", 3, true, false, false, false, false, true); // D - Double Click - Node
+// Launch External Editor: '"C:/Users/kccistc/AppData/Local/Programs/Microsoft VS Code/Code.exe" -g "D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/new/top.v":23'
+// Elapsed time: 462 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_watch (watch_wrapper.v)]", 1, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_watch (watch_wrapper.v)]", 1, true, false, false, false, false, true); // D - Double Click - Node
+// Launch External Editor: '"C:/Users/kccistc/AppData/Local/Programs/Microsoft VS Code/Code.exe" -g "D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/new/watch_wrapper.v":23'
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // E
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cr): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a
+// F (c): Create Source File: addNotify
+// Elapsed time: 40 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "top"); // aa
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// HOptionPane Warning: 'A file with the specified name already exists. Please enter another name. (Create Source File)'
+selectButton("OptionPane.button", "OK"); // JButton
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "sw_w_uart"); // aa
+// Elapsed time: 19 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "sw_w_uart_top"); // aa
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Create Source File"); // F
+// 'g' command handler elapsed time: 75 seconds
+dismissDialog("Add Sources"); // c
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_watch (watch_wrapper.v)]", 1); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_watch (watch_wrapper.v)]", 1, true, false, false, false, true, false); // D - Popup Trigger - Node
+selectMenuItem(RDIResourceCommand.RDICommands_PROPERTIES, "Source Node Properties..."); // ak
+// Run Command: RDIResourceCommand.RDICommands_PROPERTIES
+// HMemoryUtils.trashcanNow. Engine heap size: 1,117 MB. GUI used memory: 77 MB. Current time: 8/7/26, 5:14:19 PM KST
+// Elapsed time: 73 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_watch (watch_wrapper.v)]", 1, true); // D - Node
+// Elapsed time: 93 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_watch (watch_wrapper.v), u_i_demux : i_demux (watch_wrapper.v)]", 2, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_watch (watch_wrapper.v), u_watch_wrapper : gk_watch_wrapper (top.v), watch_bd_edit_time : gk_btn_debounce (btn_debounce.v)]", 4, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_watch (watch_wrapper.v), u_watch_wrapper : gk_watch_wrapper (top.v), watch_bd_edit_time : gk_btn_debounce (btn_debounce.v)]", 4, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_watch (watch_wrapper.v), u_watch_wrapper : gk_watch_wrapper (top.v)]", 3, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_watch (watch_wrapper.v), u_watch_wrapper : gk_watch_wrapper (top.v), watch_bd_edit_time : gk_btn_debounce (btn_debounce.v)]", 4, false); // D
+// Elapsed time: 96 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_watch (watch_wrapper.v), u_watch_wrapper : gk_watch_wrapper (top.v), u_control_unit : gk_control_unit (control_unit.v)]", 8, false); // D
+// Elapsed time: 15 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_watch (watch_wrapper.v), u_watch_wrapper : gk_watch_wrapper (top.v), u_stopwatch_datapath : gk_stopwatch_datapath (stopwatch.v)]", 9, true); // D - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_watch (watch_wrapper.v), u_watch_wrapper : gk_watch_wrapper (top.v), u_stopwatch_datapath : gk_stopwatch_datapath (stopwatch.v)]", 9); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_watch (watch_wrapper.v), u_watch_wrapper : gk_watch_wrapper (top.v), u_stopwatch_datapath : gk_stopwatch_datapath (stopwatch.v), u_msec_counter : gk_time_counter (stopwatch.v)]", 11, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_watch (watch_wrapper.v), u_watch_wrapper : gk_watch_wrapper (top.v), u_stopwatch_datapath : gk_stopwatch_datapath (stopwatch.v), u_hour_counter : gk_time_counter (stopwatch.v)]", 14, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_watch (watch_wrapper.v), u_watch_wrapper : gk_watch_wrapper (top.v), u_stopwatch_datapath : gk_stopwatch_datapath (stopwatch.v), u_bin2bcd_min : gk_bin2bcd (stopwatch.v)]", 16, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_watch (watch_wrapper.v), u_watch_wrapper : gk_watch_wrapper (top.v), u_stopwatch_datapath : gk_stopwatch_datapath (stopwatch.v), u_msec_counter : gk_time_counter (stopwatch.v)]", 11, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_watch (watch_wrapper.v), u_watch_wrapper : gk_watch_wrapper (top.v), u_stopwatch_datapath : gk_stopwatch_datapath (stopwatch.v)]", 9, true); // D - Node
+// Elapsed time: 36 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_watch (watch_wrapper.v), u_watch_wrapper : gk_watch_wrapper (top.v), u_stopwatch_datapath : gk_stopwatch_datapath (stopwatch.v), u_tick_gen_100hz : gk_tick_gen_100hz (stopwatch.v)]", 10, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_watch (watch_wrapper.v), u_watch_wrapper : gk_watch_wrapper (top.v), u_stopwatch_datapath : gk_stopwatch_datapath (stopwatch.v), u_msec_counter : gk_time_counter (stopwatch.v)]", 11, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_watch (watch_wrapper.v), u_watch_wrapper : gk_watch_wrapper (top.v), u_stopwatch_datapath : gk_stopwatch_datapath (stopwatch.v), u_msec_counter : gk_time_counter (stopwatch.v)]", 11, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_watch (watch_wrapper.v), u_watch_wrapper : gk_watch_wrapper (top.v), u_stopwatch_datapath : gk_stopwatch_datapath (stopwatch.v), u_sec_counter : gk_time_counter (stopwatch.v)]", 12, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_watch (watch_wrapper.v), u_watch_wrapper : gk_watch_wrapper (top.v), u_stopwatch_datapath : gk_stopwatch_datapath (stopwatch.v), u_hour_counter : gk_time_counter (stopwatch.v)]", 14, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_watch (watch_wrapper.v), u_watch_wrapper : gk_watch_wrapper (top.v), u_stopwatch_datapath : gk_stopwatch_datapath (stopwatch.v), u_bin2bcd_sec : gk_bin2bcd (stopwatch.v)]", 15, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_watch (watch_wrapper.v), u_watch_wrapper : gk_watch_wrapper (top.v), u_stopwatch_datapath : gk_stopwatch_datapath (stopwatch.v), u_bcd_combiner : gk_bcd_combiner (stopwatch.v)]", 18, true); // D - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_watch (watch_wrapper.v), u_watch_wrapper : gk_watch_wrapper (top.v), u_stopwatch_datapath : gk_stopwatch_datapath (stopwatch.v), u_bcd_combiner : gk_bcd_combiner (stopwatch.v)]", 18); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_watch (watch_wrapper.v), u_watch_wrapper : gk_watch_wrapper (top.v), u_stopwatch_datapath : gk_stopwatch_datapath (stopwatch.v), u_bcd_combiner : gk_bcd_combiner (stopwatch.v), u_time_ds : gk_time_digit_sel (stopwatch.v)]", 19, false); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_watch (watch_wrapper.v), u_stopwatch_wrapper : ds_stopwatch_wrapper (ds_stopwatch_wrapper.v)]", 20); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_watch (watch_wrapper.v), u_stopwatch_wrapper : ds_stopwatch_wrapper (ds_stopwatch_wrapper.v)]", 20, true); // D - Node
+// Elapsed time: 27 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_watch (watch_wrapper.v), u_stopwatch_wrapper : ds_stopwatch_wrapper (ds_stopwatch_wrapper.v), U_BD_RUNSTOP : ds_btn_debounce (ds_stopwatch_wrapper.v)]", 21, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_watch (watch_wrapper.v), u_stopwatch_wrapper : ds_stopwatch_wrapper (ds_stopwatch_wrapper.v)]", 20, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_watch (watch_wrapper.v), u_stopwatch_wrapper : ds_stopwatch_wrapper (ds_stopwatch_wrapper.v), U_BD_RUNSTOP : ds_btn_debounce (ds_stopwatch_wrapper.v)]", 21, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_watch (watch_wrapper.v), u_stopwatch_wrapper : ds_stopwatch_wrapper (ds_stopwatch_wrapper.v), U_BD_CLEAR : ds_btn_debounce (ds_stopwatch_wrapper.v)]", 22, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_watch (watch_wrapper.v), u_stopwatch_wrapper : ds_stopwatch_wrapper (ds_stopwatch_wrapper.v), U_BD_MODE : ds_btn_debounce (ds_stopwatch_wrapper.v)]", 23, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_watch (watch_wrapper.v), u_stopwatch_wrapper : ds_stopwatch_wrapper (ds_stopwatch_wrapper.v), U_BD_RECORD : ds_btn_debounce (ds_stopwatch_wrapper.v)]", 24, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_watch (watch_wrapper.v), u_stopwatch_wrapper : ds_stopwatch_wrapper (ds_stopwatch_wrapper.v), U_CONTROL_UNIT : ds_control_unit (ds_stopwatch_wrapper.v)]", 25, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_watch (watch_wrapper.v), u_stopwatch_wrapper : ds_stopwatch_wrapper (ds_stopwatch_wrapper.v), U_RECORD : ds_record (ds_stopwatch_wrapper.v)]", 26, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_watch (watch_wrapper.v), u_stopwatch_wrapper : ds_stopwatch_wrapper (ds_stopwatch_wrapper.v), U_STOPWATCH_DATAPATH : ds_stopwatch_datapath (ds_stopwatch_wrapper.v)]", 27, true); // D - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_watch (watch_wrapper.v), u_stopwatch_wrapper : ds_stopwatch_wrapper (ds_stopwatch_wrapper.v), U_STOPWATCH_DATAPATH : ds_stopwatch_datapath (ds_stopwatch_wrapper.v)]", 27); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_watch (watch_wrapper.v), u_stopwatch_wrapper : ds_stopwatch_wrapper (ds_stopwatch_wrapper.v), U_STOPWATCH_DATAPATH : ds_stopwatch_datapath (ds_stopwatch_wrapper.v), U_HOUR_COUNTER : ds_time_counter (ds_stopwatch_wrapper.v)]", 28, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_watch (watch_wrapper.v), u_stopwatch_wrapper : ds_stopwatch_wrapper (ds_stopwatch_wrapper.v), U_STOPWATCH_DATAPATH : ds_stopwatch_datapath (ds_stopwatch_wrapper.v), U_SEC_COUNTER : ds_time_counter (ds_stopwatch_wrapper.v)]", 30, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_watch (watch_wrapper.v), u_stopwatch_wrapper : ds_stopwatch_wrapper (ds_stopwatch_wrapper.v), U_STOPWATCH_DATAPATH : ds_stopwatch_datapath (ds_stopwatch_wrapper.v), U_HOUR_COUNTER : ds_time_counter (ds_stopwatch_wrapper.v)]", 28, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_watch (watch_wrapper.v), u_stopwatch_wrapper : ds_stopwatch_wrapper (ds_stopwatch_wrapper.v), U_STOPWATCH_DATAPATH : ds_stopwatch_datapath (ds_stopwatch_wrapper.v)]", 27, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_watch (watch_wrapper.v), u_stopwatch_wrapper : ds_stopwatch_wrapper (ds_stopwatch_wrapper.v), U_STOPWATCH_DATAPATH : ds_stopwatch_datapath (ds_stopwatch_wrapper.v), U_MIN_COUNTER : ds_time_counter (ds_stopwatch_wrapper.v)]", 29, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_watch (watch_wrapper.v), u_stopwatch_wrapper : ds_stopwatch_wrapper (ds_stopwatch_wrapper.v), U_STOPWATCH_DATAPATH : ds_stopwatch_datapath (ds_stopwatch_wrapper.v), U_MSEC_COUNTER : ds_time_counter (ds_stopwatch_wrapper.v)]", 31, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_watch (watch_wrapper.v), u_stopwatch_wrapper : ds_stopwatch_wrapper (ds_stopwatch_wrapper.v), U_STOPWATCH_DATAPATH : ds_stopwatch_datapath (ds_stopwatch_wrapper.v), U_TICK_GEN_100HZ : ds_tick_gen_100hz (ds_stopwatch_wrapper.v)]", 32, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_watch (watch_wrapper.v), u_stopwatch_wrapper : ds_stopwatch_wrapper (ds_stopwatch_wrapper.v), U_MUX_8x4 : ds_mux_8x4 (ds_stopwatch_wrapper.v)]", 33, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_watch (watch_wrapper.v), u_o_mux : o_mux (watch_wrapper.v)]", 34, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_watch (watch_wrapper.v), u_stopwatch_wrapper : ds_stopwatch_wrapper (ds_stopwatch_wrapper.v), U_MUX_8x4 : ds_mux_8x4 (ds_stopwatch_wrapper.v)]", 33, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_watch (watch_wrapper.v), u_stopwatch_wrapper : ds_stopwatch_wrapper (ds_stopwatch_wrapper.v), U_STOPWATCH_DATAPATH : ds_stopwatch_datapath (ds_stopwatch_wrapper.v), U_TICK_GEN_100HZ : ds_tick_gen_100hz (ds_stopwatch_wrapper.v)]", 32, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_watch (watch_wrapper.v), u_stopwatch_wrapper : ds_stopwatch_wrapper (ds_stopwatch_wrapper.v), U_MUX_8x4 : ds_mux_8x4 (ds_stopwatch_wrapper.v)]", 33, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_watch (watch_wrapper.v), u_stopwatch_wrapper : ds_stopwatch_wrapper (ds_stopwatch_wrapper.v), U_STOPWATCH_DATAPATH : ds_stopwatch_datapath (ds_stopwatch_wrapper.v), U_TICK_GEN_100HZ : ds_tick_gen_100hz (ds_stopwatch_wrapper.v)]", 32, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_watch (watch_wrapper.v), u_stopwatch_wrapper : ds_stopwatch_wrapper (ds_stopwatch_wrapper.v), U_STOPWATCH_DATAPATH : ds_stopwatch_datapath (ds_stopwatch_wrapper.v), U_SEC_COUNTER : ds_time_counter (ds_stopwatch_wrapper.v)]", 30, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_watch (watch_wrapper.v), u_stopwatch_wrapper : ds_stopwatch_wrapper (ds_stopwatch_wrapper.v), U_MUX_8x4 : ds_mux_8x4 (ds_stopwatch_wrapper.v)]", 33, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_watch (watch_wrapper.v), u_stopwatch_wrapper : ds_stopwatch_wrapper (ds_stopwatch_wrapper.v), U_STOPWATCH_DATAPATH : ds_stopwatch_datapath (ds_stopwatch_wrapper.v), U_MSEC_COUNTER : ds_time_counter (ds_stopwatch_wrapper.v)]", 31, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_watch (watch_wrapper.v), u_stopwatch_wrapper : ds_stopwatch_wrapper (ds_stopwatch_wrapper.v), U_MUX_8x4 : ds_mux_8x4 (ds_stopwatch_wrapper.v)]", 33, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_watch (watch_wrapper.v), u_o_mux : o_mux (watch_wrapper.v)]", 34, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_watch (watch_wrapper.v), u_fnd_controller : fnd_controller (fnd_controller.v)]", 35, true); // D - Node
+// Elapsed time: 15 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_watch (watch_wrapper.v), u_fnd_controller : fnd_controller (fnd_controller.v)]", 35); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_watch (watch_wrapper.v), u_fnd_controller : fnd_controller (fnd_controller.v), u_clk_divider : clk_divider (fnd_controller.v)]", 36, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_watch (watch_wrapper.v), u_fnd_controller : fnd_controller (fnd_controller.v), u_counter : counter (fnd_controller.v)]", 37, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_watch (watch_wrapper.v), u_fnd_controller : fnd_controller (fnd_controller.v), u_ds_msec : digit_splitter (fnd_controller.v)]", 39, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_watch (watch_wrapper.v), u_fnd_controller : fnd_controller (fnd_controller.v), u_ds_sec : digit_splitter (fnd_controller.v)]", 40, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_watch (watch_wrapper.v), u_fnd_controller : fnd_controller (fnd_controller.v), u_ds_hour : digit_splitter (fnd_controller.v)]", 42, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_watch (watch_wrapper.v), u_fnd_controller : fnd_controller (fnd_controller.v), u_comp_dot : comparator_dot (fnd_controller.v)]", 43, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_watch (watch_wrapper.v), u_fnd_controller : fnd_controller (fnd_controller.v), u_mux_8x1_b : mux_8x1 (fnd_controller.v)]", 45, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_watch (watch_wrapper.v), u_fnd_controller : fnd_controller (fnd_controller.v), u_bcd : bcd (fnd_controller.v)]", 47, false); // D
+// Elapsed time: 49 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_watch (watch_wrapper.v)]", 1, true); // D - Node
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_watch (watch_wrapper.v), u_watch_wrapper : gk_watch_wrapper (top.v), u_stopwatch_datapath : gk_stopwatch_datapath (stopwatch.v)]", 9); // D
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_watch (watch_wrapper.v), u_stopwatch_wrapper : ds_stopwatch_wrapper (ds_stopwatch_wrapper.v)]", 10); // D
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_watch (watch_wrapper.v), u_watch_wrapper : gk_watch_wrapper (top.v)]", 3); // D
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_watch (watch_wrapper.v), u_fnd_controller : fnd_controller (fnd_controller.v)]", 6); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, btn_debounce (uart.v)]", 9, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart_loop_back (uart_loop_back.v)]", 8, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart_controller (uart.v)]", 7, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_watch (watch_wrapper.v), u_fnd_controller : fnd_controller (fnd_controller.v)]", 6, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_watch (watch_wrapper.v), u_o_mux : o_mux (watch_wrapper.v)]", 5, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_watch (watch_wrapper.v), u_stopwatch_wrapper : ds_stopwatch_wrapper (ds_stopwatch_wrapper.v)]", 4, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_watch (watch_wrapper.v), u_watch_wrapper : gk_watch_wrapper (top.v)]", 3, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_watch (watch_wrapper.v), u_i_demux : i_demux (watch_wrapper.v)]", 2, false); // D
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // E
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cr): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a
+// F (c): Create Source File: addNotify
+// Elapsed time: 21 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "sw_w_uart"); // aa
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Create Source File"); // F
+selectButton("FINISH", "Finish"); // JButton
+// 'g' command handler elapsed time: 25 seconds
+dismissDialog("Add Sources"); // c
+// Tcl Message: close [ open D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/new/sw_w_uart.v w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/new/sw_w_uart.v 
+// I (cr): Define Module: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: FILE_SET_CHANGE
+selectButton("OptionPane.button", "Yes"); // JButton
+dismissDialog("Define Module"); // I
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sw_w_uart (sw_w_uart.v)]", 10, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sw_w_uart (sw_w_uart.v)]", 10, false, false, false, false, false, true); // D - Double Click
+// Launch External Editor: '"C:/Users/kccistc/AppData/Local/Programs/Microsoft VS Code/Code.exe" -g "D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/new/sw_w_uart.v":23'
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_watch (watch_wrapper.v)]", 1, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_watch (watch_wrapper.v)]", 1, true, false, false, false, false, true); // D - Double Click - Node
+// Launch External Editor: '"C:/Users/kccistc/AppData/Local/Programs/Microsoft VS Code/Code.exe" -g "D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/new/watch_wrapper.v":23'
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_watch (watch_wrapper.v)]", 1, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_watch (watch_wrapper.v)]", 1, true, false, false, false, false, true); // D - Double Click - Node
+// Launch External Editor: '"C:/Users/kccistc/AppData/Local/Programs/Microsoft VS Code/Code.exe" -g "D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/new/watch_wrapper.v":23'
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sw_w_uart (sw_w_uart.v)]", 10, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sw_w_uart (sw_w_uart.v)]", 10, false, false, false, false, false, true); // D - Double Click
+// Launch External Editor: '"C:/Users/kccistc/AppData/Local/Programs/Microsoft VS Code/Code.exe" -g "D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/new/sw_w_uart.v":23'
+// Elapsed time: 356 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_watch (watch_wrapper.v)]", 1, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sw_w_uart (sw_w_uart.v)]", 10, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sw_w_uart (sw_w_uart.v)]", 10, false, false, false, false, true, false); // D - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ah
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ah
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ah
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ah
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ah
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ah
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ah
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ak
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (cr): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Remove Sources"); // aE
+// Tcl Message: export_ip_user_files -of_objects  [get_files D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/new/sw_w_uart.v] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/new/sw_w_uart.v 
+// Elapsed time: 16 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart_controller (uart.v)]", 7, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart_controller (uart.v)]", 7, true, false, false, false, false, true); // D - Double Click - Node
+// Launch External Editor: '"C:/Users/kccistc/AppData/Local/Programs/Microsoft VS Code/Code.exe" -g "D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/new/uart.v":23'
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart_loop_back (uart_loop_back.v)]", 11, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart_loop_back (uart_loop_back.v)]", 11, true, false, false, false, false, true); // D - Double Click - Node
+// Launch External Editor: '"C:/Users/kccistc/AppData/Local/Programs/Microsoft VS Code/Code.exe" -g "D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/new/uart_loop_back.v":23'
+// Elapsed time: 290 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart_loop_back (uart_loop_back.v), u_uart_rx : uart_rx (uart.v)]", 14, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart_loop_back (uart_loop_back.v), u_uart_rx : uart_rx (uart.v)]", 14, false, false, false, false, false, true); // D - Double Click
+// Launch External Editor: '"C:/Users/kccistc/AppData/Local/Programs/Microsoft VS Code/Code.exe" -g "D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/new/uart.v":288'
+// Elapsed time: 38 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_watch (watch_wrapper.v)]", 1, true); // D - Node
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12); // u
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12); // u
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design, Schematic]", 15, false); // u
+// bz (cr):  Open Elaborated Design : addNotify
+// Tcl Message: synth_design -rtl -rtl_skip_mlo -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -rtl_skip_mlo -name rtl_1 Starting synth_design Using part: xc7a35tcpg236-1 Top: stopwatch_watch 
+// TclEventType: ELABORATE_START
+// TclEventType: ELABORATE_FINISH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,435 MB. GUI used memory: 78 MB. Current time: 8/7/26, 5:35:04 PM KST
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,455 MB. GUI used memory: 78 MB. Current time: 8/7/26, 5:35:05 PM KST
+// [Engine Memory]: 1,455 MB (+295812kb) [01:21:03]
+// [Engine Memory]: 1,572 MB (+46296kb) [01:21:03]
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Schematic: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1521 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Device 21-403] Loading part xc7a35tcpg236-1 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1488.477 ; gain = 239.848 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'stopwatch_watch' [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/new/watch_wrapper.v:23] 
+// Tcl Message: 	Parameter MSEC_WIDTH bound to: 7 - type: integer  	Parameter SEC_WIDTH bound to: 6 - type: integer  	Parameter MIN_WIDTH bound to: 6 - type: integer  	Parameter HOUR_WIDTH bound to: 5 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'i_demux' [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/new/watch_wrapper.v:168] INFO: [Synth 8-6155] done synthesizing module 'i_demux' (1#1) [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/new/watch_wrapper.v:168] INFO: [Synth 8-6157] synthesizing module 'gk_watch_wrapper' [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/new/top.v:23] 
+// Tcl Message: 	Parameter MSEC_WIDTH bound to: 7 - type: integer  	Parameter SEC_WIDTH bound to: 6 - type: integer  	Parameter MIN_WIDTH bound to: 6 - type: integer  	Parameter HOUR_WIDTH bound to: 5 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'gk_btn_debounce' [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/source/btn_debounce.v:23] INFO: [Synth 8-6155] done synthesizing module 'gk_btn_debounce' (2#1) [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/source/btn_debounce.v:23] INFO: [Synth 8-6157] synthesizing module 'gk_control_unit' [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/source/control_unit.v:23] 
+// Tcl Message: 	Parameter RUN bound to: 1'b0  	Parameter EDITTIME bound to: 1'b1  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'gk_control_unit' (3#1) [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/source/control_unit.v:23] INFO: [Synth 8-6157] synthesizing module 'gk_stopwatch_datapath' [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/new/stopwatch.v:23] 
+// Tcl Message: 	Parameter MSEC_WIDTH bound to: 7 - type: integer  	Parameter SEC_WIDTH bound to: 6 - type: integer  	Parameter MIN_WIDTH bound to: 6 - type: integer  	Parameter HOUR_WIDTH bound to: 5 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'gk_tick_gen_100hz' [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/new/stopwatch.v:167] 
+// Tcl Message: 	Parameter F_COUNT bound to: 1000000 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'gk_tick_gen_100hz' (4#1) [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/new/stopwatch.v:167] INFO: [Synth 8-6157] synthesizing module 'gk_time_counter' [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/new/stopwatch.v:196] 
+// Tcl Message: 	Parameter BIT_WIDTH bound to: 7 - type: integer  	Parameter TIMES bound to: 100 - type: integer  	Parameter INIT bound to: 32'sb00000000000000000000000000000000  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'gk_time_counter' (5#1) [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/new/stopwatch.v:196] INFO: [Synth 8-6157] synthesizing module 'gk_time_counter__parameterized0' [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/new/stopwatch.v:196] 
+// Tcl Message: 	Parameter BIT_WIDTH bound to: 6 - type: integer  	Parameter TIMES bound to: 60 - type: integer  	Parameter INIT bound to: 32'sb00000000000000000000000000000000  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'gk_time_counter__parameterized0' (5#1) [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/new/stopwatch.v:196] INFO: [Synth 8-6157] synthesizing module 'gk_time_counter__parameterized1' [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/new/stopwatch.v:196] 
+// Tcl Message: 	Parameter BIT_WIDTH bound to: 5 - type: integer  	Parameter TIMES bound to: 24 - type: integer  	Parameter INIT bound to: 32'sb00000000000000000000000000001100  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'gk_time_counter__parameterized1' (5#1) [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/new/stopwatch.v:196] INFO: [Synth 8-6157] synthesizing module 'gk_bin2bcd' [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/new/stopwatch.v:240] 
+// Tcl Message: 	Parameter TIMES bound to: 60 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'gk_bin2bcd' (6#1) [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/new/stopwatch.v:240] INFO: [Synth 8-6157] synthesizing module 'gk_bin2bcd__parameterized0' [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/new/stopwatch.v:240] 
+// Tcl Message: 	Parameter TIMES bound to: 24 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'gk_bin2bcd__parameterized0' (6#1) [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/new/stopwatch.v:240] INFO: [Synth 8-6157] synthesizing module 'gk_bcd_combiner' [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/new/stopwatch.v:271] 
+// Tcl Message: 	Parameter MSEC_WIDTH bound to: 7 - type: integer  	Parameter SEC_WIDTH bound to: 6 - type: integer  	Parameter MIN_WIDTH bound to: 6 - type: integer  	Parameter HOUR_WIDTH bound to: 5 - type: integer  
+// Tcl Message: 	Parameter MSEC_WIDTH bound to: 7 - type: integer  	Parameter SEC_WIDTH bound to: 6 - type: integer  	Parameter MIN_WIDTH bound to: 6 - type: integer  	Parameter HOUR_WIDTH bound to: 5 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'ds_btn_debounce' [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/sources_ds/ds_stopwatch_wrapper.v:481] INFO: [Synth 8-6155] done synthesizing module 'ds_btn_debounce' (11#1) [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/sources_ds/ds_stopwatch_wrapper.v:481] INFO: [Synth 8-6157] synthesizing module 'ds_control_unit' [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/sources_ds/ds_stopwatch_wrapper.v:391] 
+// Tcl Message: 	Parameter STOP bound to: 0 - type: integer  	Parameter RUN bound to: 1 - type: integer  	Parameter CLEAR bound to: 2 - type: integer  	Parameter MODE bound to: 3 - type: integer  	Parameter RECORD bound to: 4 - type: integer  
+// Tcl Message: 	Parameter MSEC_WIDTH bound to: 7 - type: integer  	Parameter SEC_WIDTH bound to: 6 - type: integer  	Parameter MIN_WIDTH bound to: 6 - type: integer  	Parameter HOUR_WIDTH bound to: 5 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'ds_time_counter' [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/sources_ds/ds_stopwatch_wrapper.v:319] 
+// Tcl Message: 	Parameter BIT_WIDTH bound to: 5 - type: integer  	Parameter TIMES bound to: 24 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'ds_time_counter' (14#1) [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/sources_ds/ds_stopwatch_wrapper.v:319] INFO: [Synth 8-6157] synthesizing module 'ds_time_counter__parameterized0' [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/sources_ds/ds_stopwatch_wrapper.v:319] 
+// Tcl Message: 	Parameter BIT_WIDTH bound to: 6 - type: integer  	Parameter TIMES bound to: 60 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'ds_time_counter__parameterized0' (14#1) [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/sources_ds/ds_stopwatch_wrapper.v:319] INFO: [Synth 8-6157] synthesizing module 'ds_time_counter__parameterized1' [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/sources_ds/ds_stopwatch_wrapper.v:319] 
+// Tcl Message: 	Parameter BIT_WIDTH bound to: 7 - type: integer  	Parameter TIMES bound to: 100 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'ds_time_counter__parameterized1' (14#1) [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/sources_ds/ds_stopwatch_wrapper.v:319] INFO: [Synth 8-6157] synthesizing module 'ds_tick_gen_100hz' [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/sources_ds/ds_stopwatch_wrapper.v:365] 
+// Tcl Message: 	Parameter F_COUNT bound to: 1000000 - type: integer  
+// Tcl Message: 	Parameter MSEC_WIDTH bound to: 7 - type: integer  	Parameter SEC_WIDTH bound to: 6 - type: integer  	Parameter MIN_WIDTH bound to: 6 - type: integer  	Parameter HOUR_WIDTH bound to: 5 - type: integer  
+// Tcl Message: INFO: [Synth 8-226] default block is never used [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/new/watch_wrapper.v:244] INFO: [Synth 8-6155] done synthesizing module 'o_mux' (19#1) [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/new/watch_wrapper.v:219] INFO: [Synth 8-6157] synthesizing module 'fnd_controller' [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/source/fnd_controller.v:21] 
+// Tcl Message: 	Parameter MSEC_WIDTH bound to: 7 - type: integer  	Parameter SEC_WIDTH bound to: 6 - type: integer  	Parameter MIN_WIDTH bound to: 6 - type: integer  	Parameter HOUR_WIDTH bound to: 5 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'clk_divider' [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/source/fnd_controller.v:153] INFO: [Synth 8-6155] done synthesizing module 'clk_divider' (20#1) [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/source/fnd_controller.v:153] 
+// Tcl Message: 	Parameter BIT_WIDTH bound to: 7 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'digit_splitter' (23#1) [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/source/fnd_controller.v:282] INFO: [Synth 8-6157] synthesizing module 'digit_splitter__parameterized0' [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/source/fnd_controller.v:282] 
+// Tcl Message: 	Parameter BIT_WIDTH bound to: 6 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'digit_splitter__parameterized0' (23#1) [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/source/fnd_controller.v:282] INFO: [Synth 8-6157] synthesizing module 'digit_splitter__parameterized1' [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/source/fnd_controller.v:282] 
+// Tcl Message: 	Parameter BIT_WIDTH bound to: 5 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'digit_splitter__parameterized1' (23#1) [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/source/fnd_controller.v:282] INFO: [Synth 8-6157] synthesizing module 'comparator_dot' [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/source/fnd_controller.v:310] 
+// Tcl Message: 	Parameter MSEC_WIDTH bound to: 7 - type: integer  
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1547.324 ; gain = 298.695 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1547.324 ; gain = 298.695 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1547.324 ; gain = 298.695 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1547.324 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Parsing XDC File [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/constrs_1/imports/26_AI_VerilogHDL_SV/Basys-3-Master.xdc] 
+// Tcl Message: Finished Parsing XDC File [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/constrs_1/imports/26_AI_VerilogHDL_SV/Basys-3-Master.xdc] Completed Processing XDC Constraints  
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1658.973 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Tcl Message: RTL Elaboration Complete:  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:07 . Memory (MB): peak = 1815.227 ; gain = 566.598 
+// Tcl Message: 79 Infos, 9 Warnings, 2 Critical Warnings and 0 Errors encountered. synth_design completed successfully 
+// Tcl Message: synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:11 . Memory (MB): peak = 1815.227 ; gain = 710.297 
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+// U (cr): Critical Messages: addNotify
+// [GUI Memory]: 160 MB (+4501kb) [01:21:06]
+// Elapsed time: 11 seconds
+dismissDialog("Open Elaborated Design"); // bz
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f
+dismissDialog("Critical Messages"); // U
+// Elapsed time: 663 seconds
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 25); // u
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 25); // u
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 26, false); // u
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ak
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// bz (cr):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw_manager 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+dismissDialog("Open Hardware Manager"); // bz
+// bz (cr):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server -allow_non_jtag 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2020.2   **** Build date : Nov 18 2020 at 10:01:48     ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.   INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042 
+// Tcl Message: INFO: [Labtools 27-3417] Launching cs_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:   ******** Xilinx cs_server v2020.2   ****** Build date   : Nov 04 2020-06:02:56     **** Build number : 2020.2.1604437376       ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.    
+// Tcl Message: connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1820.711 ; gain = 1.078 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// WARNING: HEventQueue.dispatchEvent() is taking  2695 ms.
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183BB7C74A 
+// HMemoryUtils.trashcanNow. Engine heap size: 3,119 MB. GUI used memory: 108 MB. Current time: 8/7/26, 5:46:26 PM KST
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.runs/impl_1/stopwatch_watch.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// [Engine Memory]: 3,123 MB (+1544861kb) [01:32:24]
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_CFGMEM_CREATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_CFGMEM_PART_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// Tcl Message: create_hw_cfgmem -hw_device [get_hw_devices xc7a35t_0] -mem_dev [lindex [get_cfgmem_parts {mx25l3233f-spi-x1_x2_x4}] 0] 
+// Elapsed time: 11 seconds
+dismissDialog("Auto Connect"); // bz
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE, (String) null); // t
+// Elapsed time: 13 seconds
+setFileChooser("D:/work/26_AI_VerilogHDL_SV/2026_0805_uart/2026_0805_uart.runs/impl_1/uart_loop_back.bit");
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// bz (cr):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/work/26_AI_VerilogHDL_SV/2026_0805_uart/2026_0805_uart.runs/impl_1/uart_loop_back.bit} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 16 seconds
+dismissDialog("Program Device"); // bz
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183BB7C74A 
+// o (cr): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// Elapsed time: 128 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f
+dismissDialog("Close Hardware Target"); // o
+// Elapsed time: 88 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+// A (cr): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// bz (cr):  Close Hardware Manager : addNotify
+dismissDialog("Confirm Close"); // A
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SESSION_CLOSE
+// Tcl Message: close_hw_manager 
+dismissDialog("Close Hardware Manager"); // bz
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_watch (watch_wrapper.v)]", 1, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stopwatch_watch (watch_wrapper.v)]", 1, true, false, false, false, false, true); // D - Double Click - Node
+// Launch External Editor: '"C:/Users/kccistc/AppData/Local/Programs/Microsoft VS Code/Code.exe" -g "D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/new/watch_wrapper.v":23'
+// Elapsed time: 124 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart_loop_back (uart_loop_back.v)]", 6, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart_loop_back (uart_loop_back.v), u_baud_tick_gen : baud_tick_gen (uart.v)]", 7, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart_loop_back (uart_loop_back.v), u_uart_tx : uart_tx (uart.v)]", 8, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart_loop_back (uart_loop_back.v), u_uart_rx : uart_rx (uart.v)]", 9, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart_loop_back (uart_loop_back.v), u_uart_tx : uart_tx (uart.v)]", 8, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart_loop_back (uart_loop_back.v), u_baud_tick_gen : baud_tick_gen (uart.v)]", 7, false); // D
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart_controller (uart.v)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart_controller (uart.v)]", 2, true, false, false, false, false, true); // D - Double Click - Node
+// Launch External Editor: '"C:/Users/kccistc/AppData/Local/Programs/Microsoft VS Code/Code.exe" -g "D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/new/uart.v":23'
+// HMemoryUtils.trashcanNow. Engine heap size: 3,158 MB. GUI used memory: 109 MB. Current time: 8/7/26, 6:04:39 PM KST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 2024 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ascii_decoder (uart.v)]", 7, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ascii_decoder (uart.v)]", 7, false, false, false, false, false, true); // D - Double Click
+// Launch External Editor: '"C:/Users/kccistc/AppData/Local/Programs/Microsoft VS Code/Code.exe" -g "D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/new/uart.v":399'
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 3,162 MB. GUI used memory: 108 MB. Current time: 8/7/26, 6:34:40 PM KST
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 1502 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 24, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cr): Synthesis is Out-of-date: addNotify
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// bz (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // bz
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// bz (cr):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: [Fri Aug  7 18:51:40 2026] Launched synth_1... Run output will be captured here: D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.runs/synth_1/runme.log [Fri Aug  7 18:51:40 2026] Launched impl_1... Run output will be captured here: D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+dismissDialog("Generate Bitstream"); // bz
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design, Schematic]", 16, false); // u
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // h
+// bz (cr):  Reloading : addNotify
+// TclEventType: ELABORATE_START
+// Tcl Message: refresh_design 
+// TclEventType: ELABORATE_FINISH
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 3,162 MB. GUI used memory: 105 MB. Current time: 8/7/26, 6:51:57 PM KST
+// Engine heap size: 3,162 MB. GUI used memory: 105 MB. Current time: 8/7/26, 6:51:57 PM KST
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 3483.965 ; gain = 78.668 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'stopwatch_watch' [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/new/watch_wrapper.v:23] 
+// Tcl Message: 	Parameter MSEC_WIDTH bound to: 7 - type: integer  	Parameter SEC_WIDTH bound to: 6 - type: integer  	Parameter MIN_WIDTH bound to: 6 - type: integer  	Parameter HOUR_WIDTH bound to: 5 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'i_demux' [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/new/watch_wrapper.v:212] INFO: [Synth 8-6155] done synthesizing module 'i_demux' (1#1) [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/new/watch_wrapper.v:212] INFO: [Synth 8-6157] synthesizing module 'gk_watch_wrapper' [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/new/top.v:23] 
+// Tcl Message: 	Parameter MSEC_WIDTH bound to: 7 - type: integer  	Parameter SEC_WIDTH bound to: 6 - type: integer  	Parameter MIN_WIDTH bound to: 6 - type: integer  	Parameter HOUR_WIDTH bound to: 5 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'gk_btn_debounce' [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/source/btn_debounce.v:23] INFO: [Synth 8-6155] done synthesizing module 'gk_btn_debounce' (2#1) [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/source/btn_debounce.v:23] INFO: [Synth 8-6157] synthesizing module 'gk_control_unit' [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/source/control_unit.v:23] 
+// Tcl Message: 	Parameter RUN bound to: 1'b0  	Parameter EDITTIME bound to: 1'b1  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'gk_control_unit' (3#1) [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/source/control_unit.v:23] INFO: [Synth 8-6157] synthesizing module 'gk_stopwatch_datapath' [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/new/stopwatch.v:23] 
+// Tcl Message: 	Parameter MSEC_WIDTH bound to: 7 - type: integer  	Parameter SEC_WIDTH bound to: 6 - type: integer  	Parameter MIN_WIDTH bound to: 6 - type: integer  	Parameter HOUR_WIDTH bound to: 5 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'gk_tick_gen_100hz' [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/new/stopwatch.v:167] 
+// Tcl Message: 	Parameter F_COUNT bound to: 1000000 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'gk_tick_gen_100hz' (4#1) [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/new/stopwatch.v:167] INFO: [Synth 8-6157] synthesizing module 'gk_time_counter' [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/new/stopwatch.v:196] 
+// Tcl Message: 	Parameter BIT_WIDTH bound to: 7 - type: integer  	Parameter TIMES bound to: 100 - type: integer  	Parameter INIT bound to: 32'sb00000000000000000000000000000000  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'gk_time_counter' (5#1) [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/new/stopwatch.v:196] INFO: [Synth 8-6157] synthesizing module 'gk_time_counter__parameterized0' [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/new/stopwatch.v:196] 
+// Tcl Message: 	Parameter BIT_WIDTH bound to: 6 - type: integer  	Parameter TIMES bound to: 60 - type: integer  	Parameter INIT bound to: 32'sb00000000000000000000000000000000  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'gk_time_counter__parameterized0' (5#1) [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/new/stopwatch.v:196] INFO: [Synth 8-6157] synthesizing module 'gk_time_counter__parameterized1' [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/new/stopwatch.v:196] 
+// Tcl Message: 	Parameter BIT_WIDTH bound to: 5 - type: integer  	Parameter TIMES bound to: 24 - type: integer  	Parameter INIT bound to: 32'sb00000000000000000000000000001100  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'gk_time_counter__parameterized1' (5#1) [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/new/stopwatch.v:196] INFO: [Synth 8-6157] synthesizing module 'gk_bin2bcd' [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/new/stopwatch.v:240] 
+// Tcl Message: 	Parameter TIMES bound to: 60 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'gk_bin2bcd' (6#1) [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/new/stopwatch.v:240] INFO: [Synth 8-6157] synthesizing module 'gk_bin2bcd__parameterized0' [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/new/stopwatch.v:240] 
+// Tcl Message: 	Parameter TIMES bound to: 24 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'gk_bin2bcd__parameterized0' (6#1) [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/new/stopwatch.v:240] INFO: [Synth 8-6157] synthesizing module 'gk_bcd_combiner' [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/new/stopwatch.v:271] 
+// Tcl Message: 	Parameter MSEC_WIDTH bound to: 7 - type: integer  	Parameter SEC_WIDTH bound to: 6 - type: integer  	Parameter MIN_WIDTH bound to: 6 - type: integer  	Parameter HOUR_WIDTH bound to: 5 - type: integer  
+// Tcl Message: 	Parameter MSEC_WIDTH bound to: 7 - type: integer  	Parameter SEC_WIDTH bound to: 6 - type: integer  	Parameter MIN_WIDTH bound to: 6 - type: integer  	Parameter HOUR_WIDTH bound to: 5 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'ds_btn_debounce' [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/sources_ds/ds_stopwatch_wrapper.v:481] INFO: [Synth 8-6155] done synthesizing module 'ds_btn_debounce' (11#1) [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/sources_ds/ds_stopwatch_wrapper.v:481] INFO: [Synth 8-6157] synthesizing module 'ds_control_unit' [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/sources_ds/ds_stopwatch_wrapper.v:391] 
+// Tcl Message: 	Parameter STOP bound to: 0 - type: integer  	Parameter RUN bound to: 1 - type: integer  	Parameter CLEAR bound to: 2 - type: integer  	Parameter MODE bound to: 3 - type: integer  	Parameter RECORD bound to: 4 - type: integer  
+// Tcl Message: 	Parameter MSEC_WIDTH bound to: 7 - type: integer  	Parameter SEC_WIDTH bound to: 6 - type: integer  	Parameter MIN_WIDTH bound to: 6 - type: integer  	Parameter HOUR_WIDTH bound to: 5 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'ds_time_counter' [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/sources_ds/ds_stopwatch_wrapper.v:319] 
+// Tcl Message: 	Parameter BIT_WIDTH bound to: 5 - type: integer  	Parameter TIMES bound to: 24 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'ds_time_counter' (14#1) [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/sources_ds/ds_stopwatch_wrapper.v:319] INFO: [Synth 8-6157] synthesizing module 'ds_time_counter__parameterized0' [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/sources_ds/ds_stopwatch_wrapper.v:319] 
+// Tcl Message: 	Parameter BIT_WIDTH bound to: 6 - type: integer  	Parameter TIMES bound to: 60 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'ds_time_counter__parameterized0' (14#1) [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/sources_ds/ds_stopwatch_wrapper.v:319] INFO: [Synth 8-6157] synthesizing module 'ds_time_counter__parameterized1' [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/sources_ds/ds_stopwatch_wrapper.v:319] 
+// Tcl Message: 	Parameter BIT_WIDTH bound to: 7 - type: integer  	Parameter TIMES bound to: 100 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'ds_time_counter__parameterized1' (14#1) [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/sources_ds/ds_stopwatch_wrapper.v:319] INFO: [Synth 8-6157] synthesizing module 'ds_tick_gen_100hz' [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/sources_ds/ds_stopwatch_wrapper.v:365] 
+// Tcl Message: 	Parameter F_COUNT bound to: 1000000 - type: integer  
+// Tcl Message: 	Parameter MSEC_WIDTH bound to: 7 - type: integer  	Parameter SEC_WIDTH bound to: 6 - type: integer  	Parameter MIN_WIDTH bound to: 6 - type: integer  	Parameter HOUR_WIDTH bound to: 5 - type: integer  
+// Tcl Message: INFO: [Synth 8-226] default block is never used [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/new/watch_wrapper.v:288] INFO: [Synth 8-6155] done synthesizing module 'o_mux' (19#1) [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/new/watch_wrapper.v:263] INFO: [Synth 8-6157] synthesizing module 'fnd_controller' [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/source/fnd_controller.v:21] 
+// Tcl Message: 	Parameter MSEC_WIDTH bound to: 7 - type: integer  	Parameter SEC_WIDTH bound to: 6 - type: integer  	Parameter MIN_WIDTH bound to: 6 - type: integer  	Parameter HOUR_WIDTH bound to: 5 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'clk_divider' [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/source/fnd_controller.v:153] INFO: [Synth 8-6155] done synthesizing module 'clk_divider' (20#1) [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/source/fnd_controller.v:153] 
+// Tcl Message: 	Parameter BIT_WIDTH bound to: 7 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'digit_splitter' (23#1) [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/source/fnd_controller.v:282] INFO: [Synth 8-6157] synthesizing module 'digit_splitter__parameterized0' [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/source/fnd_controller.v:282] 
+// Tcl Message: 	Parameter BIT_WIDTH bound to: 6 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'digit_splitter__parameterized0' (23#1) [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/source/fnd_controller.v:282] INFO: [Synth 8-6157] synthesizing module 'digit_splitter__parameterized1' [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/source/fnd_controller.v:282] 
+// Tcl Message: 	Parameter BIT_WIDTH bound to: 5 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'digit_splitter__parameterized1' (23#1) [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/source/fnd_controller.v:282] INFO: [Synth 8-6157] synthesizing module 'comparator_dot' [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/source/fnd_controller.v:310] 
+// Tcl Message: 	Parameter MSEC_WIDTH bound to: 7 - type: integer  
+// Tcl Message: 	Parameter BAUD_RATE bound to: 153600 - type: integer  	Parameter CLK_PERIOD bound to: 100000000 - type: integer  	Parameter F_COUNT bound to: 651 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'baud_tick_gen' (29#1) [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/new/uart.v:71] INFO: [Synth 8-6157] synthesizing module 'uart_tx' [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/new/uart.v:129] 
+// Tcl Message: 	Parameter IDLE bound to: 2'b00  	Parameter START bound to: 2'b01  	Parameter DATA bound to: 2'b10  	Parameter STOP bound to: 2'b11  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'uart_tx' (30#1) [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/new/uart.v:129] INFO: [Synth 8-6157] synthesizing module 'uart_rx' [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/new/uart.v:288] 
+// Tcl Message: 	Parameter IDLE bound to: 2'b00  	Parameter START bound to: 2'b01  	Parameter DATA bound to: 2'b10  	Parameter STOP bound to: 2'b11  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'uart_rx' (31#1) [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/new/uart.v:288] INFO: [Synth 8-6155] done synthesizing module 'uart_loop_back' (32#1) [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/new/uart_loop_back.v:23] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'ascii_decoder' [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/new/uart.v:399] INFO: [Synth 8-155] case statement is not full and has no default [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/new/uart.v:434] INFO: [Synth 8-6155] done synthesizing module 'ascii_decoder' (33#1) [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/new/uart.v:399] INFO: [Synth 8-6155] done synthesizing module 'stopwatch_watch' (34#1) [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/new/watch_wrapper.v:23] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 3529.785 ; gain = 124.488 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 3547.707 ; gain = 142.410 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 3547.707 ; gain = 142.410 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 3,162 MB. GUI used memory: 83 MB. Current time: 8/7/26, 6:51:58 PM KST
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Schematic: addNotify
+// Schematic: addNotify
+// Schematic: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1329 ms.
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 3562.176 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Parsing XDC File [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/constrs_1/imports/26_AI_VerilogHDL_SV/Basys-3-Master.xdc] Finished Parsing XDC File [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/constrs_1/imports/26_AI_VerilogHDL_SV/Basys-3-Master.xdc] Completed Processing XDC Constraints  
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 3562.176 ; gain = 156.879 
+dismissDialog("Reloading"); // bz
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ag (cr): Implementation Failed: addNotify
+// Elapsed time: 29 seconds
+selectCheckBox(RDIResource.MessageWithOptionDialog_DONT_SHOW_THIS_DIALOG_AGAIN, "Don't show this dialog again", true); // g: TRUE
+selectCheckBox(RDIResource.MessageWithOptionDialog_DONT_SHOW_THIS_DIALOG_AGAIN, "Don't show this dialog again", false); // g: FALSE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Implementation Failed"); // ag
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net u_uart_loop_back/u_uart_rx/D[0] has multiple drivers: u_uart_loop_back/u_uart_rx/q_reg[0]_i_2__0/O, and u_uart_loop_back/u_uart_rx/q_reg[0]_i_1__1/O.. ]", 7, true); // ah - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net u_uart_loop_back/u_uart_rx/D[0] has multiple drivers: u_uart_loop_back/u_uart_rx/q_reg[0]_i_2__0/O, and u_uart_loop_back/u_uart_rx/q_reg[0]_i_1__1/O.. ]", 7, true); // ah - Node
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net u_uart_loop_back/u_uart_rx/D[0] has multiple drivers: u_uart_loop_back/u_uart_rx/q_reg[0]_i_2__0/O, and u_uart_loop_back/u_uart_rx/q_reg[0]_i_1__1/O.. ]", 7); // ah
+// Elapsed time: 24 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net u_uart_loop_back/u_uart_rx/D[0] has multiple drivers: u_uart_loop_back/u_uart_rx/q_reg[0]_i_2__0/O, and u_uart_loop_back/u_uart_rx/q_reg[0]_i_1__1/O.. , [DRC MDRV-1] Multiple Driver Nets: Net u_uart_loop_back/u_uart_rx/UNCONN_OUT[0] has multiple drivers: u_uart_loop_back/u_uart_rx/q_reg[0]_i_2__1/O, and u_uart_loop_back/u_uart_rx/q_reg[0]_i_1__2/O.. ]", 8, false); // ah
+// Elapsed time: 12 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net u_uart_loop_back/u_uart_rx/D[0] has multiple drivers: u_uart_loop_back/u_uart_rx/q_reg[0]_i_2__0/O, and u_uart_loop_back/u_uart_rx/q_reg[0]_i_1__1/O.. , [DRC MDRV-1] Multiple Driver Nets: Net u_uart_loop_back/u_uart_rx/UNCONN_OUT_0[0] has multiple drivers: u_watch_wrapper/watch_bd_edit_time/q_reg[0]_i_2/O, and u_uart_loop_back/u_uart_rx/q_reg[0]_i_1/O.. ]", 9, false); // ah
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net u_uart_loop_back/u_uart_rx/D[0] has multiple drivers: u_uart_loop_back/u_uart_rx/q_reg[0]_i_2__0/O, and u_uart_loop_back/u_uart_rx/q_reg[0]_i_1__1/O.. , [DRC MDRV-1] Multiple Driver Nets: Net u_uart_loop_back/u_uart_rx/UNCONN_OUT_1[0] has multiple drivers: u_uart_loop_back/u_uart_rx/q_reg[0]_i_2__2/O, and u_uart_loop_back/u_uart_rx/q_reg[0]_i_1__0/O.. ]", 10, false); // ah
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-6859] multi-driven net on pin tx with 1st driver pin 'u_uart_loop_back/u_uart_tx/tx_reg_reg/Q' [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/new/uart.v:155]. ]", 1, true); // ah - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;D:\work\26_AI_VerilogHDL_SV\2026_0807_w_sw_uart\2026_0728_stopwatch.srcs\sources_1\imports\new\uart.v;-;;-;16;-;line;-;155;-;;-;16;-;"); // ah
+// Launch External Editor: '"C:/Users/kccistc/AppData/Local/Programs/Microsoft VS Code/Code.exe" -g "D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/new/uart.v":155'
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 228 seconds
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // h
+// bz (cr):  Reloading : addNotify
+// TclEventType: ELABORATE_START
+// Tcl Message: refresh_design 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3562.176 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// TclEventType: ELABORATE_FINISH
+// TclEventType: DESIGN_REFRESH
+// [GUI Memory]: 173 MB (+4392kb) [02:43:24]
+// HMemoryUtils.trashcanNow. Engine heap size: 3,162 MB. GUI used memory: 85 MB. Current time: 8/7/26, 6:57:27 PM KST
+// Engine heap size: 3,162 MB. GUI used memory: 85 MB. Current time: 8/7/26, 6:57:27 PM KST
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'stopwatch_watch' [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/new/watch_wrapper.v:23] 
+// Tcl Message: 	Parameter MSEC_WIDTH bound to: 7 - type: integer  	Parameter SEC_WIDTH bound to: 6 - type: integer  	Parameter MIN_WIDTH bound to: 6 - type: integer  	Parameter HOUR_WIDTH bound to: 5 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'i_demux' [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/new/watch_wrapper.v:212] INFO: [Synth 8-6155] done synthesizing module 'i_demux' (1#1) [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/new/watch_wrapper.v:212] INFO: [Synth 8-6157] synthesizing module 'gk_watch_wrapper' [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/new/top.v:23] 
+// Tcl Message: 	Parameter MSEC_WIDTH bound to: 7 - type: integer  	Parameter SEC_WIDTH bound to: 6 - type: integer  	Parameter MIN_WIDTH bound to: 6 - type: integer  	Parameter HOUR_WIDTH bound to: 5 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'gk_btn_debounce' [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/source/btn_debounce.v:23] INFO: [Synth 8-6155] done synthesizing module 'gk_btn_debounce' (2#1) [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/source/btn_debounce.v:23] INFO: [Synth 8-6157] synthesizing module 'gk_control_unit' [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/source/control_unit.v:23] 
+// Tcl Message: 	Parameter RUN bound to: 1'b0  	Parameter EDITTIME bound to: 1'b1  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'gk_control_unit' (3#1) [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/source/control_unit.v:23] INFO: [Synth 8-6157] synthesizing module 'gk_stopwatch_datapath' [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/new/stopwatch.v:23] 
+// Tcl Message: 	Parameter MSEC_WIDTH bound to: 7 - type: integer  	Parameter SEC_WIDTH bound to: 6 - type: integer  	Parameter MIN_WIDTH bound to: 6 - type: integer  	Parameter HOUR_WIDTH bound to: 5 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'gk_tick_gen_100hz' [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/new/stopwatch.v:167] 
+// Tcl Message: 	Parameter F_COUNT bound to: 1000000 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'gk_tick_gen_100hz' (4#1) [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/new/stopwatch.v:167] INFO: [Synth 8-6157] synthesizing module 'gk_time_counter' [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/new/stopwatch.v:196] 
+// Tcl Message: 	Parameter BIT_WIDTH bound to: 7 - type: integer  	Parameter TIMES bound to: 100 - type: integer  	Parameter INIT bound to: 32'sb00000000000000000000000000000000  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'gk_time_counter' (5#1) [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/new/stopwatch.v:196] INFO: [Synth 8-6157] synthesizing module 'gk_time_counter__parameterized0' [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/new/stopwatch.v:196] 
+// Tcl Message: 	Parameter BIT_WIDTH bound to: 6 - type: integer  	Parameter TIMES bound to: 60 - type: integer  	Parameter INIT bound to: 32'sb00000000000000000000000000000000  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'gk_time_counter__parameterized0' (5#1) [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/new/stopwatch.v:196] INFO: [Synth 8-6157] synthesizing module 'gk_time_counter__parameterized1' [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/new/stopwatch.v:196] 
+// Tcl Message: 	Parameter BIT_WIDTH bound to: 5 - type: integer  	Parameter TIMES bound to: 24 - type: integer  	Parameter INIT bound to: 32'sb00000000000000000000000000001100  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'gk_time_counter__parameterized1' (5#1) [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/new/stopwatch.v:196] INFO: [Synth 8-6157] synthesizing module 'gk_bin2bcd' [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/new/stopwatch.v:240] 
+// Tcl Message: 	Parameter TIMES bound to: 60 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'gk_bin2bcd' (6#1) [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/new/stopwatch.v:240] INFO: [Synth 8-6157] synthesizing module 'gk_bin2bcd__parameterized0' [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/new/stopwatch.v:240] 
+// Tcl Message: 	Parameter TIMES bound to: 24 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'gk_bin2bcd__parameterized0' (6#1) [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/new/stopwatch.v:240] INFO: [Synth 8-6157] synthesizing module 'gk_bcd_combiner' [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/new/stopwatch.v:271] 
+// Tcl Message: 	Parameter MSEC_WIDTH bound to: 7 - type: integer  	Parameter SEC_WIDTH bound to: 6 - type: integer  	Parameter MIN_WIDTH bound to: 6 - type: integer  	Parameter HOUR_WIDTH bound to: 5 - type: integer  
+// Tcl Message: 	Parameter MSEC_WIDTH bound to: 7 - type: integer  	Parameter SEC_WIDTH bound to: 6 - type: integer  	Parameter MIN_WIDTH bound to: 6 - type: integer  	Parameter HOUR_WIDTH bound to: 5 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'ds_btn_debounce' [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/sources_ds/ds_stopwatch_wrapper.v:481] INFO: [Synth 8-6155] done synthesizing module 'ds_btn_debounce' (11#1) [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/sources_ds/ds_stopwatch_wrapper.v:481] INFO: [Synth 8-6157] synthesizing module 'ds_control_unit' [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/sources_ds/ds_stopwatch_wrapper.v:391] 
+// Tcl Message: 	Parameter STOP bound to: 0 - type: integer  	Parameter RUN bound to: 1 - type: integer  	Parameter CLEAR bound to: 2 - type: integer  	Parameter MODE bound to: 3 - type: integer  	Parameter RECORD bound to: 4 - type: integer  
+// Tcl Message: 	Parameter MSEC_WIDTH bound to: 7 - type: integer  	Parameter SEC_WIDTH bound to: 6 - type: integer  	Parameter MIN_WIDTH bound to: 6 - type: integer  	Parameter HOUR_WIDTH bound to: 5 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'ds_time_counter' [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/sources_ds/ds_stopwatch_wrapper.v:319] 
+// Tcl Message: 	Parameter BIT_WIDTH bound to: 5 - type: integer  	Parameter TIMES bound to: 24 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'ds_time_counter' (14#1) [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/sources_ds/ds_stopwatch_wrapper.v:319] INFO: [Synth 8-6157] synthesizing module 'ds_time_counter__parameterized0' [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/sources_ds/ds_stopwatch_wrapper.v:319] 
+// Tcl Message: 	Parameter BIT_WIDTH bound to: 6 - type: integer  	Parameter TIMES bound to: 60 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'ds_time_counter__parameterized0' (14#1) [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/sources_ds/ds_stopwatch_wrapper.v:319] INFO: [Synth 8-6157] synthesizing module 'ds_time_counter__parameterized1' [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/sources_ds/ds_stopwatch_wrapper.v:319] 
+// Tcl Message: 	Parameter BIT_WIDTH bound to: 7 - type: integer  	Parameter TIMES bound to: 100 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'ds_time_counter__parameterized1' (14#1) [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/sources_ds/ds_stopwatch_wrapper.v:319] INFO: [Synth 8-6157] synthesizing module 'ds_tick_gen_100hz' [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/sources_ds/ds_stopwatch_wrapper.v:365] 
+// Tcl Message: 	Parameter F_COUNT bound to: 1000000 - type: integer  
+// Tcl Message: 	Parameter MSEC_WIDTH bound to: 7 - type: integer  	Parameter SEC_WIDTH bound to: 6 - type: integer  	Parameter MIN_WIDTH bound to: 6 - type: integer  	Parameter HOUR_WIDTH bound to: 5 - type: integer  
+// Tcl Message: INFO: [Synth 8-226] default block is never used [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/new/watch_wrapper.v:288] INFO: [Synth 8-6155] done synthesizing module 'o_mux' (19#1) [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/new/watch_wrapper.v:263] INFO: [Synth 8-6157] synthesizing module 'fnd_controller' [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/source/fnd_controller.v:21] 
+// Tcl Message: 	Parameter MSEC_WIDTH bound to: 7 - type: integer  	Parameter SEC_WIDTH bound to: 6 - type: integer  	Parameter MIN_WIDTH bound to: 6 - type: integer  	Parameter HOUR_WIDTH bound to: 5 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'clk_divider' [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/source/fnd_controller.v:153] INFO: [Synth 8-6155] done synthesizing module 'clk_divider' (20#1) [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/source/fnd_controller.v:153] 
+// Tcl Message: 	Parameter BIT_WIDTH bound to: 7 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'digit_splitter' (23#1) [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/source/fnd_controller.v:282] INFO: [Synth 8-6157] synthesizing module 'digit_splitter__parameterized0' [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/source/fnd_controller.v:282] 
+// Tcl Message: 	Parameter BIT_WIDTH bound to: 6 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'digit_splitter__parameterized0' (23#1) [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/source/fnd_controller.v:282] INFO: [Synth 8-6157] synthesizing module 'digit_splitter__parameterized1' [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/source/fnd_controller.v:282] 
+// Tcl Message: 	Parameter BIT_WIDTH bound to: 5 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'digit_splitter__parameterized1' (23#1) [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/source/fnd_controller.v:282] INFO: [Synth 8-6157] synthesizing module 'comparator_dot' [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/source/fnd_controller.v:310] 
+// Tcl Message: 	Parameter MSEC_WIDTH bound to: 7 - type: integer  
+// Tcl Message: 	Parameter BAUD_RATE bound to: 153600 - type: integer  	Parameter CLK_PERIOD bound to: 100000000 - type: integer  	Parameter F_COUNT bound to: 651 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'baud_tick_gen' (29#1) [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/new/uart.v:71] INFO: [Synth 8-6157] synthesizing module 'uart_tx' [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/new/uart.v:129] 
+// Tcl Message: 	Parameter IDLE bound to: 2'b00  	Parameter START bound to: 2'b01  	Parameter DATA bound to: 2'b10  	Parameter STOP bound to: 2'b11  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'uart_tx' (30#1) [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/new/uart.v:129] INFO: [Synth 8-6157] synthesizing module 'uart_rx' [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/new/uart.v:288] 
+// Tcl Message: 	Parameter IDLE bound to: 2'b00  	Parameter START bound to: 2'b01  	Parameter DATA bound to: 2'b10  	Parameter STOP bound to: 2'b11  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'uart_rx' (31#1) [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/new/uart.v:288] INFO: [Synth 8-6155] done synthesizing module 'uart_loop_back' (32#1) [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/new/uart_loop_back.v:23] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'ascii_decoder' [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/new/uart.v:399] INFO: [Synth 8-155] case statement is not full and has no default [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/new/uart.v:434] INFO: [Synth 8-6155] done synthesizing module 'ascii_decoder' (33#1) [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/new/uart.v:399] INFO: [Synth 8-6155] done synthesizing module 'stopwatch_watch' (34#1) [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/new/watch_wrapper.v:23] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 3562.176 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 3572.984 ; gain = 10.809 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 3572.984 ; gain = 10.809 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 3,162 MB. GUI used memory: 84 MB. Current time: 8/7/26, 6:57:27 PM KST
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Schematic: addNotify
+// Schematic: addNotify
+// Schematic: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1079 ms.
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 3587.363 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Parsing XDC File [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/constrs_1/imports/26_AI_VerilogHDL_SV/Basys-3-Master.xdc] Finished Parsing XDC File [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/constrs_1/imports/26_AI_VerilogHDL_SV/Basys-3-Master.xdc] Completed Processing XDC Constraints  
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 3587.363 ; gain = 25.188 
+dismissDialog("Reloading"); // bz
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-6859] multi-driven net on pin tx with 1st driver pin 'u_uart_loop_back/u_uart_tx/tx_reg_reg/Q' [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/new/uart.v:155]. ]", 1, true); // ah - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;D:\work\26_AI_VerilogHDL_SV\2026_0807_w_sw_uart\2026_0728_stopwatch.srcs\sources_1\imports\new\uart.v;-;;-;16;-;line;-;155;-;;-;16;-;"); // ah
+// Launch External Editor: '"C:/Users/kccistc/AppData/Local/Programs/Microsoft VS Code/Code.exe" -g "D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/new/uart.v":155'
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-6859] multi-driven net on pin tx with 1st driver pin 'u_uart_loop_back/u_uart_tx/tx_reg_reg/Q' [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/new/uart.v:155]. ]", 1, true); // ah - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;D:\work\26_AI_VerilogHDL_SV\2026_0807_w_sw_uart\2026_0728_stopwatch.srcs\sources_1\imports\new\uart.v;-;;-;16;-;line;-;155;-;;-;16;-;"); // ah
+// Launch External Editor: '"C:/Users/kccistc/AppData/Local/Programs/Microsoft VS Code/Code.exe" -g "D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/new/uart.v":155'
+// Elapsed time: 38 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-6859] multi-driven net on pin tx with 1st driver pin 'u_uart_loop_back/u_uart_tx/tx_reg_reg/Q' [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/new/uart.v:155]. ]", 1, true); // ah - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;D:\work\26_AI_VerilogHDL_SV\2026_0807_w_sw_uart\2026_0728_stopwatch.srcs\sources_1\imports\new\uart.v;-;;-;16;-;line;-;155;-;;-;16;-;"); // ah
+// Launch External Editor: '"C:/Users/kccistc/AppData/Local/Programs/Microsoft VS Code/Code.exe" -g "D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/new/uart.v":155'
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net u_uart_loop_back/u_uart_rx/D[0] has multiple drivers: u_uart_loop_back/u_uart_rx/q_reg[0]_i_2__0/O, and u_uart_loop_back/u_uart_rx/q_reg[0]_i_1__1/O.. ]", 7); // ah
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 280 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net u_uart_loop_back/u_uart_rx/D[0] has multiple drivers: u_uart_loop_back/u_uart_rx/q_reg[0]_i_2__0/O, and u_uart_loop_back/u_uart_rx/q_reg[0]_i_1__1/O.. , [DRC MDRV-1] Multiple Driver Nets: Net u_uart_loop_back/u_uart_rx/UNCONN_OUT[0] has multiple drivers: u_uart_loop_back/u_uart_rx/q_reg[0]_i_2__1/O, and u_uart_loop_back/u_uart_rx/q_reg[0]_i_1__2/O.. ]", 8, false); // ah
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-6859] multi-driven net on pin tx with 1st driver pin 'u_uart_loop_back/u_uart_tx/tx_reg_reg/Q' [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/new/uart.v:155]. ]", 1, true); // ah - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;D:\work\26_AI_VerilogHDL_SV\2026_0807_w_sw_uart\2026_0728_stopwatch.srcs\sources_1\imports\new\uart.v;-;;-;16;-;line;-;155;-;;-;16;-;"); // ah
+// Launch External Editor: '"C:/Users/kccistc/AppData/Local/Programs/Microsoft VS Code/Code.exe" -g "D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/new/uart.v":155'
+// Elapsed time: 29 seconds
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 338, 88); // dS
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-6859] multi-driven net on pin tx with 1st driver pin 'u_uart_loop_back/u_uart_tx/tx_reg_reg/Q' [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/new/uart.v:155]. ]", 1, true); // ah - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;D:\work\26_AI_VerilogHDL_SV\2026_0807_w_sw_uart\2026_0728_stopwatch.srcs\sources_1\imports\new\uart.v;-;;-;16;-;line;-;155;-;;-;16;-;"); // ah
+// Launch External Editor: '"C:/Users/kccistc/AppData/Local/Programs/Microsoft VS Code/Code.exe" -g "D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/new/uart.v":155'
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-6859] multi-driven net on pin tx with 1st driver pin 'u_uart_loop_back/u_uart_tx/tx_reg_reg/Q' [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/new/uart.v:155]. ]", 1, true); // ah - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;D:\work\26_AI_VerilogHDL_SV\2026_0807_w_sw_uart\2026_0728_stopwatch.srcs\sources_1\imports\new\uart.v;-;;-;16;-;line;-;155;-;;-;16;-;"); // ah
+// Launch External Editor: '"C:/Users/kccistc/AppData/Local/Programs/Microsoft VS Code/Code.exe" -g "D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/new/uart.v":155'
+// Tcl Command: 'rdi::info_commands {g*}'
+// Tcl Command: 'rdi::info_commands {gr*}'
+// Tcl Command: 'rdi::info_commands {gre*}'
+// Tcl Command: 'rdi::info_commands {grep*}'
+// Tcl Command: 'rdi::match_options {grep} {}'
+// Tcl Command: 'rdi::match_options {grep} {n}'
+// Elapsed time: 10 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "grep -n tx_reg", true); // l
+// Tcl Command: 'grep -n tx_reg'
+// Tcl Command: 'grep -n tx_reg'
+// Tcl Message: grep -n tx_reg 
+// bz (cr):  Tcl Command Line : addNotify
+// Elapsed time: 56 seconds
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a
+// Elapsed time: 24 seconds
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-6859] multi-driven net on pin tx with 1st driver pin 'u_uart_loop_back/u_uart_tx/tx_reg_reg/Q' [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/new/uart.v:155]. ]", 1, true); // ah - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;D:\work\26_AI_VerilogHDL_SV\2026_0807_w_sw_uart\2026_0728_stopwatch.srcs\sources_1\imports\new\uart.v;-;;-;16;-;line;-;155;-;;-;16;-;"); // ah
+// Launch External Editor: '"C:/Users/kccistc/AppData/Local/Programs/Microsoft VS Code/Code.exe" -g "D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/imports/new/uart.v":155'
+selectCheckBox(PAResourceItoN.MsgView_CRITICAL_WARNINGS, (String) null, false); // g: FALSE
+maximizeFrame(PAResourceOtoP.PAViews_MESSAGES, "Messages"); // az
+// Elapsed time: 12 seconds
+selectCheckBox(PAResourceItoN.MsgView_CRITICAL_WARNINGS, (String) null, true); // g: TRUE
+selectCheckBox(PAResourceItoN.MsgView_ERROR_MESSAGES, (String) null, false); // g: FALSE
+selectCheckBox(PAResourceItoN.MsgView_WARNING_MESSAGES, (String) null, true); // g: TRUE
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-6104] Input port 'tx' has an internal driver [D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/new/watch_wrapper.v:191]. ]", 9, false); // ah
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;D:\work\26_AI_VerilogHDL_SV\2026_0807_w_sw_uart\2026_0728_stopwatch.srcs\sources_1\new\watch_wrapper.v;-;;-;16;-;line;-;191;-;;-;16;-;"); // ah
+// Launch External Editor: '"C:/Users/kccistc/AppData/Local/Programs/Microsoft VS Code/Code.exe" -g "D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.srcs/sources_1/new/watch_wrapper.v":191'
+// Elapsed time: 60 seconds
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // h
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'

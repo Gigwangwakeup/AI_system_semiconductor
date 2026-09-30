@@ -1,0 +1,108 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Fri Aug  7 20:28:18 2026
+| Host         : DESKTOP-7CFQ9ND running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file stopwatch_watch_control_sets_placed.rpt
+| Design       : stopwatch_watch
+| Device       : xc7a35t
+--------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    30 |
+|    Minimum number of control sets                        |    30 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    53 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    30 |
+| >= 0 to < 4        |     1 |
+| >= 4 to < 6        |     9 |
+| >= 6 to < 8        |     6 |
+| >= 8 to < 10       |    10 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     4 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              30 |           10 |
+| No           | No                    | Yes                    |             241 |           74 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |              48 |           18 |
+| Yes          | No                    | Yes                    |             188 |           59 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------------------------------------+-------------------------------------------------------------------------------------+------------------+------------------+----------------+--------------+
+|                    Clock Signal                    |                                    Enable Signal                                    | Set/Reset Signal | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------------------------------------------+-------------------------------------------------------------------------------------+------------------+------------------+----------------+--------------+
+|  u_fnd_controller/u_clk_divider/clk_1Khz_reg_reg_0 |                                                                                     | reset_IBUF       |                2 |              3 |         1.50 |
+|  clk_IBUF_BUFG                                     | u_watch_wrapper/u_stopwatch_datapath/u_bcd_combiner/u_time_ds/digit_cnt_reg[0]_1[0] | reset_IBUF       |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG                                     | u_watch_wrapper/u_stopwatch_datapath/u_bcd_combiner/u_time_ds/E[0]                  | reset_IBUF       |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG                                     | u_watch_wrapper/u_stopwatch_datapath/u_bcd_combiner/u_time_ds/digit_cnt_reg[0]_0[0] | reset_IBUF       |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG                                     | u_watch_wrapper/u_stopwatch_datapath/u_bcd_combiner/u_time_ds/digit_cnt_reg[1]_1[0] | reset_IBUF       |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG                                     | u_watch_wrapper/u_stopwatch_datapath/u_bcd_combiner/u_time_ds/digit_cnt_reg[1]_2[0] | reset_IBUF       |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG                                     | u_uart_loop_back/u_uart_rx/n_tick_cnt                                               |                  |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG                                     | u_uart_loop_back/u_uart_tx/tick_cnt_next                                            |                  |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG                                     | u_stopwatch_wrapper/U_CONTROL_UNIT/clear_reg_reg_3[0]                               | reset_IBUF       |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG                                     | u_watch_wrapper/u_control_unit/c_state_reg_1[0]                                     | reset_IBUF       |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG                                     | u_stopwatch_wrapper/U_CONTROL_UNIT/clear_reg_reg_1[0]                               | reset_IBUF       |                2 |              6 |         3.00 |
+|  clk_IBUF_BUFG                                     | u_stopwatch_wrapper/U_CONTROL_UNIT/clear_reg_reg_2[0]                               | reset_IBUF       |                3 |              6 |         2.00 |
+|  clk_IBUF_BUFG                                     | u_watch_wrapper/u_control_unit/E[0]                                                 | reset_IBUF       |                4 |              6 |         1.50 |
+|  clk_IBUF_BUFG                                     | u_watch_wrapper/u_control_unit/c_state_reg_0[0]                                     | reset_IBUF       |                4 |              6 |         1.50 |
+|  clk_IBUF_BUFG                                     | u_stopwatch_wrapper/U_CONTROL_UNIT/clear_reg_reg_0[0]                               | reset_IBUF       |                3 |              7 |         2.33 |
+|  clk_IBUF_BUFG                                     | u_watch_wrapper/u_stopwatch_datapath/u_tick_gen_100hz/E[0]                          | reset_IBUF       |                3 |              7 |         2.33 |
+|  u_stopwatch_wrapper/U_BD_CLEAR/o_1Mhz_reg_n_0     |                                                                                     | reset_IBUF       |                2 |              8 |         4.00 |
+|  u_stopwatch_wrapper/U_BD_MODE/o_1Mhz_reg_n_0      |                                                                                     | reset_IBUF       |                2 |              8 |         4.00 |
+|  u_stopwatch_wrapper/U_BD_RECORD/o_1Mhz_reg_n_0    |                                                                                     | reset_IBUF       |                1 |              8 |         8.00 |
+|  u_stopwatch_wrapper/U_BD_RUNSTOP/o_1Mhz           |                                                                                     | reset_IBUF       |                2 |              8 |         4.00 |
+|  u_watch_wrapper/watch_bd_edit_time/clk_1mhz       |                                                                                     | reset_IBUF       |                2 |              8 |         4.00 |
+|  u_watch_wrapper/watch_bd_left/clk_1mhz_reg_n_0    |                                                                                     | reset_IBUF       |                2 |              8 |         4.00 |
+|  u_watch_wrapper/watch_bd_right/clk_1mhz_reg_n_0   |                                                                                     | reset_IBUF       |                1 |              8 |         8.00 |
+|  u_watch_wrapper/watch_bd_up/clk_1mhz_reg_n_0      |                                                                                     | reset_IBUF       |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                     | u_uart_loop_back/u_uart_rx/n_rx_data                                                |                  |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                     | u_uart_loop_back/u_uart_tx/data_next_0                                              |                  |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                     | u_stopwatch_wrapper/U_RECORD/o_record_0                                             |                  |               11 |             24 |         2.18 |
+|  clk_IBUF_BUFG                                     |                                                                                     |                  |               10 |             30 |         3.00 |
+|  clk_IBUF_BUFG                                     | u_stopwatch_wrapper/U_CONTROL_UNIT/E[0]                                             | reset_IBUF       |               27 |            120 |         4.44 |
+|  clk_IBUF_BUFG                                     |                                                                                     | reset_IBUF       |               58 |            174 |         3.00 |
++----------------------------------------------------+-------------------------------------------------------------------------------------+------------------+------------------+----------------+--------------+
+
+

@@ -1,0 +1,132 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Aug  7 19:06:52 2026
+# Process ID: 1172
+# Current directory: D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10468 D:\work\26_AI_VerilogHDL_SV\2026_0807_w_sw_uart\2026_0728_stopwatch.xpr
+# Log file: D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/vivado.log
+# Journal file: D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+refresh_design
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+refresh_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {D:\work\26_AI_VerilogHDL_SV\2026_0805_uart\2026_0805_uart.runs\impl_1\uart_loop_back.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+create_hw_cfgmem -hw_device [get_hw_devices xc7a35t_0] -mem_dev [lindex [get_cfgmem_parts {mx25l3233f-spi-x1_x2_x4}] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.runs/impl_1/stopwatch_watch.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+refresh_design
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.runs/impl_1/stopwatch_watch.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.runs/impl_1/stopwatch_watch.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.runs/impl_1/stopwatch_watch.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.runs/impl_1/stopwatch_watch.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+refresh_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+refresh_design
+refresh_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+show_objects -name find_1 [get_cells -hierarchical -filter { PRIMITIVE_TYPE =~ RTL_REGISTER.latch.* } ]
+refresh_design
+show_objects -name find_1 [get_cells -hierarchical -filter { PRIMITIVE_TYPE =~ RTL_REGISTER.latch.* } ]
+refresh_design
+refresh_design
+show_objects -name find_1 [get_cells -hierarchical -filter { PRIMITIVE_TYPE =~ RTL_REGISTER.latch.* } ]
+open_run synth_1 -name synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+close_design
+close_design
+open_run synth_1 -name synth_1
+close_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.runs/impl_1/stopwatch_watch.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+refresh_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.runs/impl_1/stopwatch_watch.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+refresh_design
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.runs/impl_1/stopwatch_watch.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/work/26_AI_VerilogHDL_SV/2026_0807_w_sw_uart/2026_0728_stopwatch.runs/impl_1/stopwatch_watch.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
