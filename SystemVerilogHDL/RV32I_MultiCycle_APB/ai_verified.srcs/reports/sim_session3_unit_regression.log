@@ -1,0 +1,16 @@
+# 시뮬레이터: Verilator 5.020, 대상: 최종 RTL(FIX-1~8) 모듈 단위 회귀 시험 (ALU, datapath JALR, APB 요청기)
+==== Unit edge-case test (Verilator) ====
+[E7a] SLT  -1 < 1                        : PASS (got 0x1       )
+[E7b] SLTU 0xFFFFFFFF < 1                : PASS (got 0x0       )
+[E8a] SRA  0x80000000 >>> 4              : PASS (got 0xf8000000)
+[E8b] SRAI imm=0x404 (shamt 4)           : PASS (got 0xf8000000)
+[E9a] SLL  1 << 33 -> 1 << 1             : PASS (got 0x2       )
+[E9b] SRL  0x80000000 >> 33              : PASS (got 0x40000000)
+[E14] ADD overflow                       : PASS (got 0x0       )
+[E5] JALR 0(x0)+5 -> PC                 : PASS (got 0x4       )
+[APB] RAM read completes                 : PASS (got 0x1       )
+[APB] RAM read data                      : PASS (got 0xaaaa0000)
+[APB] RAM transfer cycles from transfer=1 to ready : 2
+[E11] Unmapped 0x30000000 not stuck      : PASS (got 0x1       )
+[E11b] Unmapped 0x20000F00 not stuck      : PASS (got 0x1       )
+==== RESULT: 12 PASS, 0 FAIL ====

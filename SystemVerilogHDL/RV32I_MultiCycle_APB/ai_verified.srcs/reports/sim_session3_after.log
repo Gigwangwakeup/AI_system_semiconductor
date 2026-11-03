@@ -1,0 +1,36 @@
+# 시뮬레이터: Verilator 5.020, 대상: rv32i_top 전체 (팀 최종본 + 수정 FIX-1~8)
+==== 팀 Target S.W (rom_code_apb_gpio) 시스템 시뮬레이션 ====
+[SW  ] GPIO_OUT(led[15:8]) = 0x55           : PASS (0x55      )
+[SW  ] IDR 읽기값(x15) = sw[15:8]        : PASS (0xa5      )
+[INFO] PC = 0x00000044 (0x44 무한 루프 도달 기대)
+[SW  ] PC가 마지막 무한루프(0x44)   : PASS (0x44      )
+==== RESULT: 3 PASS, 0 FAIL ====
+==== 명령어별 사이클 수 측정 ====
+[CYC ] I/R-type (addi)  : 3 cycles
+[CYC ] Store (sw)        : 6 cycles
+[CYC ] Load  (lb/lw)     : 7 cycles
+==== 엣지 케이스 시스템 시뮬레이션 (rv32i_top + 엣지 프로그램) ====
+[E1  ] x0 쓰기 무시 (addi x0,x0,5)      : PASS (0x0       )
+[E15 ] LUI+ADDI(-1) 32비트 상수         : PASS (0x12344fff)
+[E15 ] LUI+ADDI(-128) 상수                : PASS (0x80feff80)
+[E2  ] LB  byte0 0x80 부호확장          : PASS (0xffffff80)
+[E3  ] LBU byte0 0x80 0확장               : PASS (0x80      )
+[E2  ] LH  half1 0x80FE 부호확장        : PASS (0xffff80fe)
+[E3  ] LHU half1 0x80FE 0확장             : PASS (0x80fe    )
+[E2  ] LB  byte1 0xFF 부호확장          : PASS (0xffffffff)
+[E3  ] LBU byte3 0x80 0확장               : PASS (0x80      )
+[E6  ] 뒤로 가는 분기 루프 3회     : PASS (0x3       )
+[E12 ] 미구현 opcode 후 계속 실행   : PASS (0x7       )
+[E11 ] 미할당 주소(0x3000_0000) 후 진행 : PASS (0x1       )
+[E11 ] 미할당 주소 읽기값 0         : PASS (0x0       )
+[E11 ] 빈 슬롯(0x2000_0300) 후 진행   : PASS (0x1       )
+[END ] 마지막 무한루프(0x68) 도달  : PASS (0x68      )
+[E13 ] 리셋 직후 PC = 0                 : PASS (0x0       )
+[E13 ] 리셋 직후 CPU FSM = FETCH        : PASS (0x0       )
+[E13 ] 리셋 후 재실행 완료(0x68)    : PASS (0x68      )
+==== RESULT: 18 PASS, 0 FAIL ====
+==== E10: 느린 슬레이브 대기 시험 ====
+[E10 ] ACCESS 단계 길이 4클럭(대기 3)        : PASS
+[E10 ] 대기 중 PADDR/PWDATA/PWRITE/PSEL 유지 : PASS
+[E10 ] PREADY 전에는 CPU ready=0            : PASS
+==== RESULT: 3 PASS, 0 FAIL ====
